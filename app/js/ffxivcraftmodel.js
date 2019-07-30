@@ -77,6 +77,7 @@ Synth.prototype.calculateBaseProgressIncrease = function (levelDifference, craft
 
     if (crafterLevel > 380) {
         baseProgress = 1.612934e-5 * craftsmanship * craftsmanship + 0.1892751 * craftsmanship + -1.232056;
+        baseProgress -= (crafterLevel - 400) / (craftsmanship/650)
     }
     else if (crafterLevel > 250) {
         baseProgress = 1.834712812e-5 * craftsmanship * craftsmanship + 1.904074773e-1 * craftsmanship + 1.544103837;

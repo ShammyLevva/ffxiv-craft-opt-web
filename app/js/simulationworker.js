@@ -158,7 +158,10 @@ function calculateBaseValues(id, settings) {
     success: {
       baseValues: {
         progress: baseProgress,
-        quality: baseQuality,
+            quality: baseQuality,
+            crafterLevel: effCrafterLevel,
+            recipeLevel: sim.synth.recipe.level,
+            levelDiff: levelDifference,
       },
     },
   });
